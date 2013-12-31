@@ -13,8 +13,6 @@ install:
   - if [[ $TRAVIS_PYTHON_VERSION == 'pypy' && $DEPS == true ]]; then pip install --use-mirrors futures mock; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '3.2' && $DEPS == true ]]; then pip install --use-mirrors pycares mock; fi
   - if [[ $TRAVIS_PYTHON_VERSION == '3.3' && $DEPS == true ]]; then pip install --use-mirrors pycares; fi
-  - python setup.py install
-  - pip install --use-mirrors coveralls
 # command to run tests, e.g. python setup.py test
 script:  
   - python runtest

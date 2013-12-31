@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
+
 if __name__ == '__main__':
-    print "Run travis test ...."
-    print " Fix and push for test"
+    os.system("uname -a")
